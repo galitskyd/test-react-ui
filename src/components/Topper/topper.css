@@ -1,0 +1,19 @@
+.selected-btns, .all-btns {
+    background-color: #FFF;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    z-index: 998;
+    min-width: 300px;
+    min-height: 40px;
+}
+
+.all-btns {
+    background-color: #EEE;
+}
+
+.selected-btns .btn.btn-space,
+.all-btns .btn.btn-space {
+    margin-right: 5px;
+    margin-bottom: 0;
+}

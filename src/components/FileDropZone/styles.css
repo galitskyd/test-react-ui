@@ -1,0 +1,22 @@
+div#file-drop-zone {
+    background: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0.6;
+}
+
+div#file-drop-zone.hidden {
+    visibility: hidden;
+}
+
+div#file-drop-zone {
+    visibility: visible;
+}
+
+div#file-drop-zone:hover {
+    cursor: pointer;
+}
