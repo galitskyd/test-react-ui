@@ -8,7 +8,8 @@
     font-weight: 400;
     padding: 4px 12px;
     text-align: center;
-    color: #333;
+    text-decoration: none;
+    color: #777;
     vertical-align: middle;
 }
 
@@ -52,6 +53,10 @@
     padding: 10px 15px;
 }
 
+.btn.btn-icon {
+    padding: 4px 5px;
+}
+
 .btn.btn-block {
     width: 100%;
 }
@@ -71,4 +76,9 @@
 .btn.btn-space {
     margin-right: 5px;
     margin-bottom: 5px;
+}
+
+.btn:not(.btn-icon) .fa,
+.btn:not(.btn-icon) .svg-inline--fa {
+    margin-right: 5px;
 }
