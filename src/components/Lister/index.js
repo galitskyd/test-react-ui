@@ -1,28 +1,54 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames'
+import './ListHeader.css';
 
-import ListHeader from '../../components/ListHeader'
-import Topper from '../../components/Topper';
+import Button from '../Button';
+import ListItem from '../ListItem';
 
-export default class Lister extends Component {
+
+export default class TopBar extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            breadcrumbs: '/ Home',
+            view: 'list',
+            selectAll: false,
+            files: []
+        }
+    }
 
     static propTypes = {
-        
+
     }
-    
+
+    toggleSelectAll = () => {
+        this.setState(prevState => ({
+            selectAll: !prevState.selectAll
+        }));
+    }
+
     render() {
         const classNames = classnames({
-            'content': true,
+            'main-content': true,
         });
+        files.push({name: 'test.txt'});
+        const fileItems = files.maps(() => {
+            return (
+                <ListItem name={this.name} />
+            );
+        });
+
+
         return (
-            <React.Fragment>
-                <Topper />
-                <div className={classNames}>
-                    <ListHeader />
-                    
+            <div className={classNames}>
+                <div className="file-list">
+                    <ul className="file-list-containers">
+                        {fileItems}
+                    </ul>
                 </div>
-            </React.Fragment>
+            </div>
         );
     }
 }

@@ -25,7 +25,7 @@ export default class TopBar extends Component {
     }
 
     static propTypes = {
-        
+
     }
 
     toggleSelectAll = () => {
@@ -33,7 +33,7 @@ export default class TopBar extends Component {
             selectAll: !prevState.selectAll
         }));
     }
-    
+
     render() {
         const classNames = classnames({
             'folder-actions': true,
@@ -42,8 +42,8 @@ export default class TopBar extends Component {
             <div className={classNames} style={{padding: '10px 20px'}}>
                 <div className="folder-breadcrumbs" style={{display: 'inline-block'}}>
                     <h2 style={{'margin-top': 0, 'margin-bottom': 0, color: '#F90'}}>
-                        <Button 
-                            iconOnly 
+                        <Button
+                            iconOnly
                             onClick={this.toggleSelectAll}>
                             <FA icon={this.state.selectAll ? faCheckSquare : faSquare} />
                         </Button>

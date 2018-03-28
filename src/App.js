@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Lister from './components/Lister/';
+import Browse from './containers/Browse/';
 
 import './App.css';
 
@@ -9,8 +9,8 @@ export default class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Lister />
-        
+        <Browse />
+
       </React.Fragment>
     );
   }
